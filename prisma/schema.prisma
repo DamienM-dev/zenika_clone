@@ -23,6 +23,7 @@ model Carrousel {
 model Expertise {
     id Int    @id @default(autoincrement())
     logo String 
+    nom String
     alt String
 }
 
@@ -40,6 +41,7 @@ model Partenaire {
     id Int    @id @default(autoincrement())
     logo String 
     alt String
+    nom String
 }
 
 model Evenement {
