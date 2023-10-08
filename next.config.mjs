@@ -7,7 +7,16 @@ await import("./src/env.mjs");
 /** @type {import("next").NextConfig} */
 const config = {
   reactStrictMode: true,
-
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "images.prismic.io",
+        port: "",
+        pathname: "/zenika-website/**",
+      },
+    ],
+  },
   /**
    * If you are using `appDir` then you must comment the below `i18n` config out.
    *
@@ -18,5 +27,4 @@ const config = {
     defaultLocale: "en",
   },
 };
-
 export default config;

@@ -5,31 +5,31 @@ async function main() {
   const sliderMain = await prisma.carrousel.createMany({
     data: [
       {
-        img: "https://i.postimg.cc/yk7RKNn6/1.jpg",
+        img: "https://images.prismic.io/zenika-website/3f991a94-d2cf-4010-b89a-de5d065aba56_4.png?auto=compress,format&rect=0,0,550,400&w=550&h=400",
         alt: "Photo slider de personne 1 sur 7",
       },
       {
-        img: "https://i.postimg.cc/RNGHZzb7/2.jpg",
+        img: "https://images.prismic.io/zenika-website/78c9219f-96ee-461b-b8a9-c721bc63537a_2.png?auto=compress,format&rect=0,0,550,400&w=550&h=400",
         alt: "Photo slider de personne 2 sur 7",
       },
       {
-        img: "https://i.postimg.cc/Wd3JDfQQ/3.jpg",
+        img: "https://images.prismic.io/zenika-website/262f9a41-9d8b-4f38-9ffc-d1be86124949_3.png?auto=compress,format&rect=0,0,550,400&w=550&h=400",
         alt: "Photo slider de personne 3 sur 7",
       },
       {
-        img: "https://i.postimg.cc/68m4CfKT/4.jpg",
+        img: "https://images.prismic.io/zenika-website/813ee750-ebdd-4944-bed1-a91d36bbb52e_12.png?auto=compress,format&rect=0,0,550,400&w=550&h=400",
         alt: "Photo slider de personne 4 sur 7",
       },
       {
-        img: "https://i.postimg.cc/xkNJ5Nj5/5.jpg",
+        img: "https://images.prismic.io/zenika-website/1495bf9f-cc2d-44ea-b7ea-054e11007c38_6.png?auto=compress,format&rect=0,0,550,400&w=550&h=400",
         alt: "Photo slider de personne 5 sur 7",
       },
       {
-        img: "https://i.postimg.cc/ygFJ4qZS/6.jpg",
+        img: "https://images.prismic.io/zenika-website/c75f5575-8153-45cc-beed-6dbcab74e46c_9.png?auto=compress,format&rect=0,0,550,400&w=550&h=400",
         alt: "Photo slider de personne 6 sur 7",
       },
       {
-        img: "https://i.postimg.cc/r06dPyKk/7.jpg",
+        img: "https://images.prismic.io/zenika-website/cbf39bde-c962-47a0-851c-624fa629eac7_8.png?auto=compress,format&rect=0,0,550,400&w=550&h=400",
         alt: "Photo slider de personne 7 sur 7",
       },
     ],
