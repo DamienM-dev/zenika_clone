@@ -1,8 +1,16 @@
-import React, { useEffect, useState } from "react";
-
-import { nunito } from "next/font/google";
-
 import Image from "next/image";
+
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+// import required modules
+import { Autoplay } from "swiper/modules";
+import { useEffect, useState } from "react";
 
 const TITLEPRINCIPAL = "Le lien entre le monde organique et le monde numérique";
 const PARAGRAPHECARROUSEL =
@@ -34,21 +42,37 @@ function CarrouselsPage() {
   }
 
   return (
-    <div>
-      <h1>{TITLEPRINCIPAL}</h1>
-      <p>{PARAGRAPHECARROUSEL}</p>
-      {carrousels.map((carrousel) => (
-        <div key={carrousel.id}>
-          <Image
-            src={carrousel.img}
-            alt={carrousel.alt}
-            height={200}
-            width={200}
-            layout="responsive"
-            objectFit="cover"
-          />
-        </div>
-      ))}
+    <div className="mx-8">
+      <h1 className="mt-10 text-center text-4xl font-bold leading-10">
+        {TITLEPRINCIPAL}
+      </h1>
+      <p className="my-5 text-center text-xl font-medium leading-6">
+        {PARAGRAPHECARROUSEL}
+      </p>
+
+      <Swiper
+        spaceBetween={30}
+        centeredSlides={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        modules={[Autoplay]}
+        className="mySwiper"
+      >
+        {carrousels.map((carrousel) => (
+          <SwiperSlide key={carrousel.id}>
+            <Image
+              src={carrousel.img}
+              alt={carrousel.alt}
+              height={200}
+              width={200}
+              layout="responsive"
+              objectFit="cover"
+            />
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </div>
   );
 }
