@@ -5,10 +5,10 @@ const prisma = new PrismaClient();
 export default async (req, res) => {
   if (req.method === "GET") {
     try {
-      const carrousels = await prisma.carrousel.findMany();
-      res.json(carrousels);
+      const references = await prisma.reference.findMany();
+      res.json(references);
     } catch (error) {
-      console.error("Erreur lors de la récupération des carrousels:", error);
+      console.error("Erreur lors de la récupération des references:", error);
       res.status(500).json({ error: "Une erreur est survenue." });
     } finally {
       await prisma.$disconnect();
