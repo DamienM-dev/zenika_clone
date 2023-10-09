@@ -38,57 +38,57 @@ async function main() {
   const expertise = await prisma.expertise.createMany({
     data: [
       {
-        logo: "https://i.postimg.cc/bZ7Fjfx1/icon-agile.jpg",
+        logo: "https://zenika-website.cdn.prismic.io/zenika-website/8bb41ee0-30c8-4cae-b673-b9671ff086f5_icon_agile.svg",
         nom: "Agilité",
         alt: "picto Agilité",
       },
       {
-        logo: "https://i.postimg.cc/w3wfjm5q/icon-architecture.jpg",
+        logo: "https://zenika-website.cdn.prismic.io/zenika-website/3acdb9c4-fbda-434b-a6bc-2cd0ef090c74_icon_architecture.svg",
         nom: "Architecture",
         alt: "picto Architecture",
       },
       {
-        logo: "https://i.postimg.cc/LqjQ9QDw/Cloud.jpg",
+        logo: "https://zenika-website.cdn.prismic.io/zenika-website/7e7d16c9-2456-4ff2-a652-de91803c0299_Cloud.svg",
         nom: "Cloud",
         alt: "picto Cloud",
       },
       {
-        logo: "https://i.postimg.cc/ppy0hLkD/icon-data.jpg",
+        logo: "https://zenika-website.cdn.prismic.io/zenika-website/8c919e5b-e4bf-43e8-9dc9-c64138a60666_icon_data.svg",
         nom: "Data",
         alt: "picto Data",
       },
       {
-        logo: "https://i.postimg.cc/zbjdWL9k/icon-design.jpg",
+        logo: "https://zenika-website.cdn.prismic.io/zenika-website/79a135d9-fb2f-46f2-877f-5213cc5aa78c_icon_design.svg",
         nom: "Design",
         alt: "picto Design",
       },
       {
-        logo: "https://i.postimg.cc/MX63wDQ3/icon-devops.jpg",
+        logo: "https://zenika-website.cdn.prismic.io/zenika-website/73284309-fb26-4e3a-9ee8-6d5797a594b8_icon_devops.svg",
         nom: "DevOps",
         alt: "picto DevOps",
       },
       {
-        logo: "https://i.postimg.cc/gL2gKzpb/icon-dev.jpg",
+        logo: "https://zenika-website.cdn.prismic.io/zenika-website/644cf05f-b5af-490e-8d2e-46ebc582bdc3_icon_dev.svg",
         nom: "Back End/ Front End",
         alt: "picto BackEnd et Front End",
       },
       {
-        logo: "https://i.postimg.cc/zb5tVwPB/GreenIT.jpg",
+        logo: "https://zenika-website.cdn.prismic.io/zenika-website/be1465f9-bba3-4fab-8347-e173cb9a4b9d_GreenIT.svg",
         nom: "Green IT",
         alt: "picto Green IT",
       },
       {
-        logo: "https://i.postimg.cc/68vYcbkq/Innovation.jpg",
+        logo: "https://zenika-website.cdn.prismic.io/zenika-website/f62ea2d6-0980-4e76-a392-a5f856270dcf_Innovation.svg",
         nom: "Innovation / IA",
         alt: "picto Innovation / IA",
       },
       {
-        logo: "https://i.postimg.cc/HrcPKkyp/Mobile.jpg",
+        logo: "https://zenika-website.cdn.prismic.io/zenika-website/749919b9-1af0-4637-8473-1b0f1928c023_Mobile.svg",
         nom: "Mobile",
         alt: "picto Mobile",
       },
       {
-        logo: "https://i.postimg.cc/Xphsw6Dt/icon-security.jpg",
+        logo: "https://zenika-website.cdn.prismic.io/zenika-website/2757e04b-5604-4400-8c33-aaaadede7bb8_icon_security.svg",
         nom: "Sécurité",
         alt: "picto Sécurité",
       },

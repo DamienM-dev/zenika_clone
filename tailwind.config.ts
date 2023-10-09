@@ -16,6 +16,9 @@ export default {
       fontFamily: {
         sans: ["Nunito", "sans-serif"],
       },
+      colors: {
+        greyColor: "#F3F3F3",
+      },
     },
   },
   plugins: [],
