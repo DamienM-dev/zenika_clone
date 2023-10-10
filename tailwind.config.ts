@@ -15,6 +15,7 @@ export default {
     extend: {
       fontFamily: {
         sans: ["Nunito", "sans-serif"],
+        "nunito-light": ["NunitoLight", "sans"],
       },
       colors: {
         greyColor: "#F3F3F3",

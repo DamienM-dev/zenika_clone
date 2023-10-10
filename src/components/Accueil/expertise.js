@@ -11,9 +11,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 
-const TITREEXPERTISE = "Nos expertises";
-
 function Expertise() {
+  const TITREEXPERTISE = "Nos expertises";
+
   const [expertises, setExpertises] = useState([]);
   const [error, setError] = useState(null);
 
@@ -58,7 +58,7 @@ function Expertise() {
                   objectFit="cover"
                 />
               </div>
-              <h3 className="font-semi-bold mt-6 h-7 text-center text-xl leading-7">
+              <h3 className="font-semi-bold mt-6 h-7 text-center font-nunito-light text-xl leading-7">
                 {expertise.nom}
               </h3>
             </SwiperSlide>

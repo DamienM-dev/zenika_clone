@@ -4,7 +4,13 @@
 
 @font-face {
   font-family: "Nunito";
-  src: url("/fonts/Nunito-ExtraLight.ttf") format("truetype");
+  src: url("/fonts/Nunito.woff2") format("truetype");
   font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NunitoLight";
+  src: url("/fonts/Nunito_light.woff2") format("woff2");
+  font-weight: 500;
   font-style: normal;
 }

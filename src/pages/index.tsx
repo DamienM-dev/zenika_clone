@@ -2,6 +2,7 @@ import Header from "../components/Header/header";
 import Carrousel from "../components/Accueil/carrousel";
 import Expertise from "../components/Accueil/expertise";
 import Reference from "../components/Accueil/reference";
+import Partenaire from "../components/Accueil/partenaire";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Carrousel />
       <Expertise />
       <Reference />
+      <Partenaire />
     </div>
   );
 }

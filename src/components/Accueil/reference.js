@@ -1,6 +1,23 @@
+// IMPORT REACT/NEXT
+
+import Image from "next/image";
 import { useState, useEffect } from "react";
 
+// IMPORT LIB
+
 import DOMPurify from "dompurify";
+
+// IMPORT SWIPRE
+
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
+// import required modules
+import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper/modules";
 
 function Reference() {
   const [references, setReferences] = useState([]);
@@ -25,17 +42,45 @@ function Reference() {
       });
   }, []);
   return (
-    <div>
+    <div className="px-10">
       <h2>{TITRE}</h2>
-      {references.map((reference) => (
-        <div key={reference.id}>
-          <p
-            dangerouslySetInnerHTML={{
-              __html: DOMPurify.sanitize(reference.paragraphe),
-            }}
-          ></p>
-        </div>
-      ))}
+      <Swiper
+        cssMode={true}
+        navigation={true}
+        pagination={true}
+        mousewheel={true}
+        keyboard={true}
+        modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+        className="mySwiper"
+      >
+        {references.map((reference) => (
+          <SwiperSlide key={reference.id}>
+            <div className="rounded-t-lg">
+              <Image
+                src={reference.img}
+                alt={reference.alt}
+                height={454}
+                width={338}
+                objectFit="cover"
+                className="w-full rounded-t-lg"
+              />
+            </div>
+            <div className=" h-96 shadow-xl">
+              <div className="p-4">
+                <h3>{reference.projet}</h3>
+                <p
+                  dangerouslySetInnerHTML={{
+                    __html: DOMPurify.sanitize(reference.paragraphe),
+                  }}
+                  className="font-nunito-light"
+                ></p>
+                <h3>Expertises</h3>
+                <p className="font-nunito-light">{reference.langage}</p>
+              </div>
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </div>
   );
 }

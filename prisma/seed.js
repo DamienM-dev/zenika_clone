@@ -115,7 +115,7 @@ async function main() {
         lien_decouvrir: "",
       },
       {
-        img: "https://i.postimg.cc/bZ7Fjfx1/icon-agile.jpg",
+        img: "https://images.prismic.io/zenika-website/03098c5d-0e17-4dc3-b72a-fec11e2284a7_dom-fou-YRMWVcdyhmI-unsplash.jpg?auto=compress,format&rect=343,0,1072,1440&w=338&h=454&quot",
         alt: "anphythéatre",
         paragraphe:
           "Après un premier Audit de son SI, ICES a confié à Zenika le développement d'une solution spécifique adaptée, unifiée et flexible pour automatiser certaines tâches administratives, permettre de répondre à des pics de demandes tout au long de l'année universitaire, et faciliter la collaboration entre les services administratifs et les étudiants.",
@@ -125,7 +125,7 @@ async function main() {
         lien_decouvrir: "",
       },
       {
-        img: "https://i.postimg.cc/bZ7Fjfx1/icon-agile.jpg",
+        img: "https://images.prismic.io/zenika-website/ab661507-2b95-4872-9bc3-d0cc1dac97ae_nail-gilfanov-TuyneoFacJg-unsplash.jpg?auto=compress,format&rect=604,0,953,1280&w=338&h=454&quot",
         alt: "sapin en fôret",
         paragraphe:
           "Arkéa a consulté Zenika pour mettre en place une démarche de co-R&D : sensibilisation au Green IT et à l'écoconception, production de prototypes fonctionnels, création d’application web d’inspiration LowTech, intégration d’outillages de mesure dans une plateforme d’intégration continue, constitution d’un référentiel de bonnes pratiques.",

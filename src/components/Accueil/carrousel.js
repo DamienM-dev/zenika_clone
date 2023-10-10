@@ -46,7 +46,7 @@ function CarrouselsPage() {
       <h1 className="mt-10 text-center text-4xl font-bold leading-10">
         {TITLEPRINCIPAL}
       </h1>
-      <p className="my-5 text-center text-xl font-medium leading-6">
+      <p className="font-nunito-light my-5 text-center text-xl leading-6">
         {PARAGRAPHECARROUSEL}
       </p>
 

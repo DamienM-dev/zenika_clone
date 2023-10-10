@@ -35,6 +35,7 @@ model Reference {
     sous_titre String
     langage String
     lien_decouvrir String
+    projet String
 }
 
 model Partenaire {
