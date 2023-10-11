@@ -43,7 +43,9 @@ function Reference() {
   }, []);
   return (
     <div className="px-10">
-      <h2>{TITRE}</h2>
+      <h2 className="leading-10b p-10 text-center text-2xl font-bold">
+        {TITRE}
+      </h2>
       <Swiper
         cssMode={true}
         navigation={true}
@@ -55,7 +57,7 @@ function Reference() {
       >
         {references.map((reference) => (
           <SwiperSlide key={reference.id}>
-            <div className="rounded-t-lg">
+            <div className="relative rounded-t-lg">
               <Image
                 src={reference.img}
                 alt={reference.alt}
@@ -64,9 +66,12 @@ function Reference() {
                 objectFit="cover"
                 className="w-full rounded-t-lg"
               />
+              <h3 className="absolute top-7 px-7 text-white">
+                {reference.sous_titre}
+              </h3>
             </div>
-            <div className=" h-96 shadow-xl">
-              <div className="p-4">
+            <div className=" ">
+              <div className="shadow-custom h-96 rounded-b-lg p-4">
                 <h3>{reference.projet}</h3>
                 <p
                   dangerouslySetInnerHTML={{

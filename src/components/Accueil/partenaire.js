@@ -38,10 +38,10 @@ function Partenaire() {
   }, []);
   return (
     <div className="bg-greyColor py-2 pb-4 pt-10">
-      <h2 className="mb-10 text-center text-2xl font-bold leading-10">
+      <h2 className="mb-9 text-center text-2xl font-bold leading-10">
         {TITRE}
       </h2>
-      <p className="px-8 pt-10">{PARAGRAPHE}</p>
+      <p className="px-8 pt-10 text-center text-xl leading-7">{PARAGRAPHE}</p>
 
       <Swiper
         navigation={true}
@@ -58,10 +58,10 @@ function Partenaire() {
                 width={112}
                 height={112}
                 objectFit="cover"
-                className="mt-10"
+                className="mt-10 rounded-full"
               />
             </div>
-            <h3 className="font-semi-bold mt-6 h-7 text-center font-nunito-light text-xl leading-7">
+            <h3 className="font-semi-bold mt-6 h-7 text-center text-xl leading-7">
               {partenaire.nom}
             </h3>
           </SwiperSlide>
