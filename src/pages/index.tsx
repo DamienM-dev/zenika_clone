@@ -5,6 +5,7 @@ import Reference from "../components/Accueil/reference";
 import Partenaire from "../components/Accueil/partenaire";
 import Actualite from "../components/Accueil/actualite";
 import Agence from "../components/Accueil/agence";
+import Footer from "../components/Footer/footer";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Partenaire />
       <Actualite />
       <Agence />
+      <Footer />
     </div>
   );
 }
