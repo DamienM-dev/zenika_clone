@@ -37,7 +37,7 @@ function Partenaire() {
       });
   }, []);
   return (
-    <div className="bg-greyColor py-2 pb-4 pt-10">
+    <div className="partenaire bg-greyColor py-2 pb-4 pt-10">
       <h2 className="mb-9 text-center text-2xl font-bold leading-10">
         {TITRE}
       </h2>
@@ -47,6 +47,20 @@ function Partenaire() {
         navigation={true}
         modules={[Navigation]}
         slidesPerView={2}
+        breakpoints={{
+          591: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          975: {
+            slidesPerView: 5,
+            spaceBetween: 40,
+          },
+          1621: {
+            slidesPerView: 7,
+            spaceBetween: 50,
+          },
+        }}
         className="mySwiper"
       >
         {partenaires.map((partenaire) => (

@@ -71,7 +71,7 @@ function Reference() {
               </h3>
             </div>
             <div className=" ">
-              <div className="shadow-custom h-96 rounded-b-lg p-4">
+              <div className="h-96 rounded-b-lg p-4 shadow-custom">
                 <h3>{reference.projet}</h3>
                 <p
                   dangerouslySetInnerHTML={{
