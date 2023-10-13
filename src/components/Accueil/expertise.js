@@ -45,6 +45,20 @@ function Expertise() {
           navigation={true}
           modules={[Navigation]}
           slidesPerView={2}
+          breakpoints={{
+            591: {
+              slidesPerView: 3,
+              spaceBetween: 20,
+            },
+            975: {
+              slidesPerView: 5,
+              spaceBetween: 40,
+            },
+            1621: {
+              slidesPerView: 8,
+              spaceBetween: 50,
+            },
+          }}
           className="mySwiper"
         >
           {expertises.map((expertise) => (
