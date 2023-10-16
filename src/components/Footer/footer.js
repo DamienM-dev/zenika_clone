@@ -3,7 +3,7 @@ import Mention from "./mention";
 
 function Footer() {
   return (
-    <footer className="pt-9">
+    <footer className="pt-9z">
       <Social />
       <Mention />
     </footer>

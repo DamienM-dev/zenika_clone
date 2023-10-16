@@ -31,24 +31,26 @@ function Agence() {
       <h2 className="my-9 text-center text-2xl font-bold leading-10 text-pinkTitre">
         {TITRE}
       </h2>
-      {agences.map((agence) => (
-        <div key={agence.id} className="p-5">
-          <div className=" w-full rounded-xl">
-            <Image
-              src={agence.img}
-              alt={agence.alt}
-              width={210}
-              height={160}
-              layout="responsive"
-              objectFit="cover"
-              className=""
-            />
-            <div className="rounded-b-xl bg-backCardAgence p-4 text-center">
-              <h3 className="capitalize text-pinkZenika">{agence.titre}</h3>
+      <div className="sm:grid sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-6">
+        {agences.map((agence) => (
+          <div key={agence.id} className="p-5">
+            <div className=" mx-auto w-full max-w-md rounded-xl">
+              <Image
+                src={agence.img}
+                alt={agence.alt}
+                width={210}
+                height={160}
+                layout="responsive"
+                objectFit="cover"
+                className=""
+              />
+              <div className="rounded-b-xl bg-backCardAgence p-4 text-center">
+                <h3 className="capitalize text-pinkZenika">{agence.titre}</h3>
+              </div>
             </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 }
